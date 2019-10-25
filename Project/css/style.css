@@ -1,7 +1,25 @@
+a {
+  text-decoration: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 * {
   list-style: none;
-  margin: 0;
-  padding: 0;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .header-part {
@@ -19,30 +37,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header-part .hd-1 .hd-1-icons ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 1.5em;
+}
+
+.header-part .hd-1 .hd-1-icons ul {
+  display: inline-block;
 }
 
 .header-part .hd-1 .hd-1-icons ul li {
-  display: inline-block;
-  padding-right: 1em;
+  display: inline;
+  padding-right: 3em;
   font-size: 1.2em;
 }
 
 .header-part .hd-1 .hd-1-icons ul li a {
   color: #888888;
-  text-decoration: none;
 }
 
 .header-part .hd-1 .hd-1-advert {
@@ -52,10 +63,152 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-part .hd-1 .hd-1-advert p {
-  font-size: 15px;
-  font-family: Montserrat-Regular;
+  text-align: center;
+  color: #a6a6a6;
+  display: inline-block;
+}
+
+.header-part .hd-1 .hd-1-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-part .hd-1 .hd-1-email div {
+  display: inline-block;
+}
+
+.header-part .hd-1 .hd-1-email div span {
+  margin-right: 1.1em;
+  color: #a6a6a6;
+}
+
+.header-part .hd-1 .hd-1-email div select {
+  background-color: transparent;
+  border: none;
+  color: #888888;
+  outline: none;
+}
+
+.header-part .hd-2 {
+  background-color: #ffffff;
+  height: 5em;
+}
+
+.header-part .hd-2 .logo-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header-part .hd-2 .nav-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-part .hd-2 .nav-part .navv {
+  width: 100%;
+}
+
+.header-part .hd-2 .nav-part .navv .navvv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-part .hd-2 .nav-part .navv .navvv li a {
+  color: #333;
+}
+
+.header-part .hd-2 .account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-part .hd-2 .account .d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.header-part .hd-2 .account .d div {
+  padding-right: 2em;
+}
+
+.content {
+  margin-top: 2em;
+  height: 55em;
+}
+
+.content .categories .elements {
+  margin-top: 1em;
+}
+
+.content .categories .elements img {
+  width: 100%;
+}
+
+.content .categories .sign {
+  background-color: #f2f2f2;
+  height: 20em;
+}
+
+.content .categories .sign .writings {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15em;
+  padding-top: 2em;
+}
+
+.content .categories .sign button {
+  border-radius: 23px;
+  width: 40%;
+  background-color: #111;
+  color: #f2f2f2;
+  height: 3em;
+  margin-left: 6em;
+}
+
+.featured {
+  margin-top: 1em;
 }
 /*# sourceMappingURL=style.css.map */
