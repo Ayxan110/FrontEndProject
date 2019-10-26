@@ -26,13 +26,16 @@ p{
             align-items: center;
             justify-content: center;
             ul{
-                display: inline-block;
                 li{
                     display: inline;
                     padding-right: 3em;
                     font-size: 1.2em;
                     a{
                         color: #888888;
+                        i:hover{
+                            transition-duration: .4s;
+                            color: #e65540
+                        }
                     }
                 }
             }
@@ -85,6 +88,9 @@ p{
                     li{
                         a{
                             color: #333;
+                        }
+                        a:hover{
+                            border-bottom: 1px solid black;
                         }
                     }
                 }
@@ -139,21 +145,14 @@ p{
 }
 .featured{
     margin-top: 1em;
-    .writings{
-        #owl-demo .item{
-            margin: 3px;
-            img{
-                display: block;
-                width: 100%;
-                height: auto;
-            }
-        }
+    .owl-carousel{
+        margin-top: 3em;
     }
 }
 .salepart{
+    background-color: #f2f2f2;
     .lookbook{
         position: relative;
-        background-image: url('/img/banner-08.jpg');
         background-position: center center;
         height: 30em;
         .lookbook-wrt{
@@ -163,34 +162,154 @@ p{
             }
             h2{
                 font-size: 3em;
-                top: 4em;
+                top: 3em;
                 left: 3.5em;
             }
             a{
                 left: 14em;
-                top: 20em;
+                top: 18em;
             }
         }
     }
     .glasses{
         position: relative;
-        background-image: url('/img/shop-item-09.jpg');
         background-position: center center;
         .gls-wrt{
             a,div{
                 position: absolute;
             }
             a{
-                top: 18em;
+                top: 14em;
                 left: 12em;
+                color: #555;
             }
             div{
-                top: 20em;
+                top: 16em;
                 left: 14em; 
-                background-color: #f09b40;
                     p{
-                        background-color: #f09b40;
+                        color: #f09b40;
                     }
+                }
+            }
+            .timer{
+                position: absolute;
+                top: 20em;
+                left: 12em;
+                div{
+                    border: 1px solid black;
+                    height: 3em;
+                    width: 3em;
+                }
+            }
+        }
+    }
+.headings{
+    text-align: center;
+}
+.blog{
+    padding: 1em;
+    .blog-card{
+        margin-top: 3em;
+        .cards{
+            .card-wrt{
+                margin-top: 1em;
+                .author{
+                    height: 40px;
+                }
+                h5{
+                    font-family: Montserrat-Medium;
+                    color: #333;
+                }
+                p{
+                    font-family: Montserrat-Regular;
+                    color: #888;
+                }
+            }
+        }
+    }
+}
+.comment{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    .flex-img{
+        display: flex;
+        margin-top: 2em;
+    }
+    .deliver{
+        margin-top: 5em;
+        display: flex;
+        justify-content: center;
+        div{
+            border-right: 1px solid black;
+            h5{
+                font-family: Montserrat-Regular;
+                color: #555;
+            }
+            i{
+                a{
+                    font-family: Montserrat-Italic;
+                    color: #888;
+                }
+            }
+        }
+    }
+}
+.ft-part{
+    padding: 2em;
+    background-color: #f2f2f2;
+    .ft-navs{
+        .assa{
+            ul{
+                margin-top: 1em !important;
+                li{
+                    display: inline;
+                    padding-right: 1em;
+                    font-size: 1em;
+                    a{
+                        color: #888888;
+                    }
+                }
+            }
+            p{
+                margin-top: 2em !important;
+                color: #696869;
+            }
+        }
+        div{
+            ul{
+                li{
+                    padding-top: 1em;
+                    a{
+                        color: #888888;
+                    }
+                }
+            }
+            h6{
+                font-family: Montserrat-Bold;
+                color: #222;
+                font-weight: bold;
+            }
+        }
+        .subs{
+            input{
+                margin-top: 2em;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+            button{
+                margin-top: 1em;
+                border-radius: 23px;
+                width: 50%;
+                height: 3em;
+                background-color: #111;
+                color: #f2f2f2;
+            }
+        }
+        .bank-card{
+            ul{
+                li{
+                    display: inline;
                 }
             }
         }
