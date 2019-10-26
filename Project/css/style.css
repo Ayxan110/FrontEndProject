@@ -211,4 +211,57 @@ p {
 .featured {
   margin-top: 1em;
 }
+
+.featured .writings #owl-demo .item {
+  margin: 3px;
+}
+
+.featured .writings #owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.salepart .lookbook {
+  position: relative;
+  background-image: url("/img/banner-08.jpg");
+  background-position: center center;
+  height: 30em;
+}
+
+.salepart .lookbook .lookbook-wrt h2, .salepart .lookbook .lookbook-wrt a {
+  color: #ffffff;
+  position: absolute;
+}
+
+.salepart .lookbook .lookbook-wrt h2 {
+  font-size: 3em;
+  top: 4em;
+  left: 3.5em;
+}
+
+.salepart .lookbook .lookbook-wrt a {
+  left: 14em;
+  top: 20em;
+}
+
+.salepart .glasses {
+  position: relative;
+  background-image: url("/img/shop-item-09.jpg");
+  background-position: center center;
+}
+
+.salepart .glasses .gls-wrt a, .salepart .glasses .gls-wrt div {
+  position: absolute;
+}
+
+.salepart .glasses .gls-wrt a {
+  top: 18em;
+  left: 12em;
+}
+
+.salepart .glasses .gls-wrt div {
+  top: 20em;
+  left: 14em;
+}
 /*# sourceMappingURL=style.css.map */
