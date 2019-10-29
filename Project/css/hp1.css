@@ -1,6 +1,29 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.img-opacity {
+  opacity: 0.3;
+}
+
+.i-opacity {
+  opacity: 1 !important;
+}
+
+.overlay-opacity {
+  opacity: 0.9 !important;
+}
+
+.textlay-opacity {
+  opacity: 1 !important;
 }
 
 img {
@@ -274,6 +297,12 @@ p {
   margin-left: 6em;
 }
 
+.content .categories div .sign button:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  background-color: #e65540;
+}
+
 .featured {
   margin-top: 1em;
 }
@@ -287,7 +316,6 @@ p {
 }
 
 .featured .owl-carousel .item img {
-  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
@@ -300,22 +328,29 @@ p {
 .featured .owl-carousel .item button {
   -webkit-transition: .5s ease;
   transition: .5s ease;
-  opacity: 0;
   position: absolute;
   top: 85%;
-  left: 50%;
+  left: 30%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
+  opacity: 0;
+  background-color: #111;
+  color: #fff;
+  border-radius: 12px;
 }
 
-.featured .owl-carousel:hover .item img {
-  opacity: 0.3;
-}
-
-.featured .owl-carousel:hover .item button {
-  opacity: 1;
+.featured .owl-carousel .item i {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  position: absolute;
+  top: 7%;
+  right: 3%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  color: #222;
 }
 
 .salepart {
@@ -443,6 +478,7 @@ p {
 }
 
 .comment {
+  padding: 0;
   padding-top: 5em;
   padding-bottom: 5em;
 }
@@ -452,6 +488,50 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-top: 2em;
+}
+
+.comment .flex-img .flex-card {
+  position: relative;
+}
+
+.comment .flex-img .flex-card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #333;
+  width: 100%;
+}
+
+.comment .flex-img .flex-card .overlay .textlay {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  text-align: center;
+  padding: 2em;
+}
+
+.comment .flex-img .flex-card .overlay .textlay i {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+}
+
+.comment .flex-img .flex-card .overlay .textlay div {
+  margin-top: 4em;
+}
+
+.comment .flex-img .flex-card .overlay .textlay div p {
+  margin-top: 1em !important;
 }
 
 .comment .deliver {
@@ -465,7 +545,7 @@ p {
 }
 
 .comment .deliver div {
-  border-right: 1px solid black;
+  text-align: center;
 }
 
 .comment .deliver div h5 {
@@ -478,26 +558,31 @@ p {
   color: #888;
 }
 
+.comment .deliver .border-div {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
 .ft-part {
   padding: 2em;
   background-color: #f2f2f2;
 }
 
-.ft-part .ft-navs .assa ul {
+.ft-part .ft-navs .info ul {
   margin-top: 1em !important;
 }
 
-.ft-part .ft-navs .assa ul li {
+.ft-part .ft-navs .info ul li {
   display: inline;
   padding-right: 1em;
   font-size: 1em;
 }
 
-.ft-part .ft-navs .assa ul li a {
+.ft-part .ft-navs .info ul li a {
   color: #888888;
 }
 
-.ft-part .ft-navs .assa p {
+.ft-part .ft-navs .info p {
   margin-top: 2em !important;
   color: #696869;
 }
@@ -582,4 +667,36 @@ p {
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
 }
-/*# sourceMappingURL=style.css.map */
+
+.ft-part .ft-navs .info li i:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  color: #e65540;
+}
+
+.ft-part .ft-navs div ul li a {
+  text-decoration: none;
+}
+
+.ft-part .ft-navs div ul li a:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  color: #e65540;
+}
+
+.ft-part .ft-navs .subs button:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  background-color: #e65540;
+}
+
+.ft-part .bank-card img {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/*# sourceMappingURL=hp1.css.map */

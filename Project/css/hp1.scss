@@ -1,6 +1,23 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
 a{
     text-decoration: none;
     cursor: pointer;
+}
+.img-opacity{
+opacity: 0.3;
+}
+.i-opacity{
+    opacity: 1 !important;
+}
+.overlay-opacity{
+    opacity: 0.9 !important;
+}
+.textlay-opacity{
+    opacity: 1 !important;
 }
 img{
     object-fit: cover;
@@ -35,7 +52,7 @@ p{
                         color: #888888;
                         i:hover{
                             transition-duration: .4s;
-                            color: #e65540
+                            color: #e65540;
                         }
                     }
                 }
@@ -191,6 +208,10 @@ p{
                     color: #f2f2f2;
                     height: 3em;
                     margin-left: 6em;
+                    &:hover{
+                        transition-duration: .5s;
+                        background-color: #e65540;
+                    }
                 }
             }    
         }
@@ -203,7 +224,6 @@ p{
         .item{
             position: relative;
             img{
-                opacity: 1;
                 display: block;
                 width: 100%;
                 height: auto;
@@ -212,21 +232,25 @@ p{
             }
             button{
                 transition: .5s ease;
-                opacity: 0;
                 position: absolute;
                 top: 85%;
-                left: 50%;
+                left: 30%;
                 transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
                 text-align: center;
+                opacity: 0;
+                background-color: #111;
+                color: #fff;
+                border-radius: 12px;
             }
-        }
-        &:hover{
-            .item img{
-                opacity: 0.3;
-            }
-            .item button{
-                opacity: 1;
+            i{
+                transition: .5s ease;
+                position: absolute;
+                top: 7%;
+                right: 3%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                opacity: 0;
+                color: #222;
             }
         }
     }
@@ -334,18 +358,58 @@ p{
     }
 }
 .comment{
+    padding: 0;
     padding-top: 5em;
     padding-bottom: 5em;
     .flex-img{
         display: flex;
         margin-top: 2em;
+        .flex-card{
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #333;
+                width: 100%;
+                .textlay {
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+                    font-size: 1em;
+                    position: absolute;
+                    text-align: center;
+                    padding: 2em;
+                    i{
+                        position: absolute;
+                        left:10%;
+                        top: 10%;
+                        cursor: pointer;
+                    }
+                    div{
+                        margin-top: 4em;
+                        p{
+                            margin-top: 1em !important;
+                            
+                        }
+                    }
+                  }
+              }
+        }
+      
     }
     .deliver{
         margin-top: 5em;
         display: flex;
         justify-content: center;
         div{
-            border-right: 1px solid black;
+            text-align: center;
             h5{
                 font-family: Montserrat-Regular;
                 color: #555;
@@ -357,13 +421,17 @@ p{
                 }
             }
         }
+        .border-div{
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
     }
 }
 .ft-part{
     padding: 2em;
     background-color: #f2f2f2;
     .ft-navs{
-        .assa{
+        .info{
             ul{
                 margin-top: 1em !important;
                 li{
@@ -441,7 +509,7 @@ p{
         animation-delay: 2.5s;
         &:hover{
             transition-duration: 1s;
-            background-color: #e65540
+            background-color: #e65540;
         }
     }
     h1{
@@ -460,3 +528,48 @@ p{
         animation-delay: .5s;
     }
 }
+.ft-part{
+    .ft-navs{
+        .info{
+            li{
+                i{
+                    &:hover{
+                        transition-duration: .5s;
+                        color: #e65540;
+                    }
+                }
+            }
+        }
+        div{
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                        &:hover{
+                            transition-duration: .5s;
+                            color: #e65540;
+                        }
+                    }
+                }
+            }
+        }
+        .subs{
+            button{
+                &:hover{
+                    transition-duration: .5s;
+                    background-color: #e65540;
+                }
+            }
+        }
+    }
+    .bank-card{
+        img{
+            cursor: pointer;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
