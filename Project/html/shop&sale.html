@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/92d6f9ab3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/shop&sale.css">
+    <header>
+        <div class="header-part container-fluid">
+            <div class="hd-1 row">
+                <div class="hd-1-icons col-12 col-sm-4 col-md-4 col-lg-4">
+                    <ul>
+                        <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="hd-1-advert col-12 col-sm-4 col-md-4 col-lg-4">
+                    <p>Free shipping for standard order over $100</p>
+                </div>
+                <div class="hd-1-email col-12 col-sm-4 col-md-4 col-lg-4">
+                    <div>
+                        <span>fashe@example.com</span>
+                        <select name="select" id="slct">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="hd-2 row">
+                <div class="logo-part col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div><img src="/img/logo.png" alt="logo"></div>
+                </div>
+                <div class="nav-part col-12 col-sm-12 col-md-4 col-lg-4">
+                    <nav class="navv">
+                        <ul class="navvv">
+                            <li class="nav-item menu">
+                                <a class="nav-link" href="#">Home</a>
+                                <ul>
+                                    <li><a href="hp1.html">Homepage V1</a></li>
+                                    <li><a href="hp2.html">Homepage V2</a></li>
+                                    <li><a href="hp3.html">Homepage V3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="account col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="d container">
+                        <div><img src="/img/icon-header-01.png" alt="logo"></div>
+                        <div><img src="/img/icon-header-02.png" alt="logo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</head>
+<section id="bcg">
+    <div id="bckg-img">
+        <h2>WOMEN</h2>
+        <h4>New Arrivals Women Collection 2018</h4>
+    </div>
+</section>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div>
+                    <h3>Categories</h3>
+                    <div>
+                        <ul>
+                            <li>All</li>
+                            <li>Women</li>
+                            <li>Men</li>
+                            <li>Kids</li>
+                            <li>Accesories</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>Filters</h3>
+                    <div>
+                        <p>
+                            <label for="amount">Price</label>
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                        </p>
+
+                        <div id="slider-range"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9"></div>
+        </div>
+    </div>
+</main>
+
+<body>
+    <script>
+    </script>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 50,
+                max: 200,
+                values: [50, 200],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script>
+</body>
+
+</html>

@@ -16,6 +16,14 @@ a {
   opacity: 1 !important;
 }
 
+.overlay-opacity {
+  opacity: 0.9 !important;
+}
+
+.textlay-opacity {
+  opacity: 1 !important;
+}
+
 .header-part .hd-1 {
   position: relative;
   background-color: #e65540;
@@ -394,5 +402,266 @@ a {
   text-align: center;
   opacity: 0;
   color: #222;
+}
+
+#bckg-img {
+  background-image: url("/img/bg-video-01.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  height: 40em;
+  background-position: center -70.7604px;
+}
+
+#bckg-img .row {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+}
+
+#bckg-img .row h2 {
+  font-size: 3em;
+  color: #fff;
+}
+
+#bckg-img .row a {
+  color: #fff;
+}
+
+#bckg-img .row .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35em;
+}
+
+#bckg-img .row .modal-dialog .modal-content {
+  width: 50em;
+  background-color: #222;
+}
+
+.blog {
+  padding: 1em;
+}
+
+.blog .blog-card {
+  margin-top: 3em;
+}
+
+.blog .blog-card .cards .card-wrt {
+  margin-top: 1em;
+}
+
+.blog .blog-card .cards .card-wrt .author {
+  height: 40px;
+}
+
+.blog .blog-card .cards .card-wrt h5 {
+  font-family: Montserrat-Medium;
+  color: #333;
+}
+
+.blog .blog-card .cards .card-wrt p {
+  font-family: Montserrat-Regular;
+  color: #888;
+}
+
+.blog .blog-card .cards .img-p {
+  overflow: hidden;
+}
+
+.blog .blog-card .cards .img-p img {
+  width: 100%;
+}
+
+.blog .blog-card .cards .img-p img:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.comment {
+  padding: 0;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.comment .flex-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+}
+
+.comment .flex-img .flex-card {
+  position: relative;
+}
+
+.comment .flex-img .flex-card .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #333;
+  width: 100%;
+}
+
+.comment .flex-img .flex-card .overlay .textlay {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  text-align: center;
+  padding: 2em;
+}
+
+.comment .flex-img .flex-card .overlay .textlay i {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+}
+
+.comment .flex-img .flex-card .overlay .textlay div {
+  margin-top: 4em;
+}
+
+.comment .flex-img .flex-card .overlay .textlay div p {
+  margin-top: 1em !important;
+}
+
+.comment .flex-img .flex-card img {
+  width: 100%;
+}
+
+.comment .deliver {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comment .deliver div {
+  text-align: center;
+}
+
+.comment .deliver div h5 {
+  font-family: Montserrat-Regular;
+  color: #555;
+}
+
+.comment .deliver div i a {
+  font-family: Montserrat-Italic;
+  color: #888;
+}
+
+.comment .deliver .border-div {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.ft-part {
+  padding: 2em;
+  background-color: #f2f2f2;
+}
+
+.ft-part .ft-navs .info ul {
+  margin-top: 1em !important;
+}
+
+.ft-part .ft-navs .info ul li {
+  display: inline;
+  padding-right: 1em;
+  font-size: 1em;
+}
+
+.ft-part .ft-navs .info ul li i:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  color: #e65540;
+}
+
+.ft-part .ft-navs .info ul li a {
+  color: #888888;
+}
+
+.ft-part .ft-navs .info p {
+  margin-top: 2em !important;
+  color: #696869;
+}
+
+.ft-part .ft-navs div ul li {
+  padding-top: 1em;
+}
+
+.ft-part .ft-navs div ul li a {
+  color: #888888;
+  text-decoration: none;
+}
+
+.ft-part .ft-navs div ul li a:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  color: #e65540;
+}
+
+.ft-part .ft-navs div h6 {
+  font-family: Montserrat-Bold;
+  color: #222;
+  font-weight: bold;
+}
+
+.ft-part .ft-navs .subs input {
+  margin-top: 2em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.ft-part .ft-navs .subs button {
+  margin-top: 1em;
+  border-radius: 23px;
+  width: 50%;
+  height: 3em;
+  background-color: #111;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+}
+
+.ft-part .ft-navs .subs button:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  background-color: #e65540;
+}
+
+.ft-part .ft-navs .bank-card ul li {
+  display: inline;
+}
+
+.ft-part .ft-navs .bank-card ul li img {
+  cursor: pointer;
 }
 /*# sourceMappingURL=hp2.css.map */

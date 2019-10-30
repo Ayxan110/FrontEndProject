@@ -1,0 +1,161 @@
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+*{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-part{
+    background-color: #f5f5f5;
+    .hd-1{
+        height: 3em;
+        .hd-1-icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul{
+                li{
+                    display: inline;
+                    padding-right: 3em;
+                    font-size: 1.2em;
+                    a{
+                        color: #888888;
+                        i:hover{
+                            transition-duration: .4s;
+                            color: #e65540;
+                        }
+                    }
+                }
+            }
+        }
+        .hd-1-advert {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                text-align: center;
+                color: #a6a6a6;
+                display: inline-block;
+            }
+        }
+        .hd-1-email{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                display: inline-block;
+                span{
+                    margin-right: 1.1em;
+                    color: #a6a6a6;
+                }
+                select{
+                    background-color: transparent;
+                    border: none;
+                    color: #888888;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .hd-2{
+        background-color: #ffffff;
+        height: 5em;
+        .logo-part{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .nav-part{
+            display: flex;
+            align-items: center;
+            .navv{
+                width: 100%;
+                .navvv{
+                    display: flex;
+                    justify-content: space-around;
+                    li{
+                        a{
+                            color: #333;
+                        }
+                        a:hover{
+                            border-bottom: 1px solid black;
+                        }
+                    }
+                }
+                .menu{
+                    ul{
+                        position: absolute;
+                        z-index: 1; 
+                        background-color: #222;
+                        width: 10em;
+                        height: 7em;
+                        padding: 1em !important;
+                        display: none;
+                        li{
+                            padding: .15em !important;
+                            a{
+                                color: #fff;
+                                
+                            }
+                            a:hover{
+                                transition-duration: .4s;
+                                color: #e65540;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    transition-duration: 2s;
+                    .menu ul{
+                        display: block;
+                    }
+                }
+            }    
+        }
+        .account{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .d{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 80%;
+                div{
+                    padding-right: 2em;
+                }
+            }
+        }
+    }
+}
+#bcg{
+    height: 15em;
+    background-image: url('/img/heading-pages-02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #bckg-img{
+        h2{
+            font-weight: bolder;
+            font-size: 3em;
+            color: #fff;
+            text-align: center;
+        }
+        h4{
+            color: #fff;
+            font-weight: 200;
+        }
+    }
+}

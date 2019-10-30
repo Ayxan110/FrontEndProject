@@ -12,6 +12,12 @@ a{
 .i-opacity{
     opacity: 1 !important;
 }
+.overlay-opacity{
+    opacity: 0.9 !important;
+}
+.textlay-opacity{
+    opacity: 1 !important;
+}
 .header-part{
     .hd-1{
         position: relative;
@@ -293,6 +299,228 @@ a{
                 text-align: center;
                 opacity: 0;
                 color: #222;
+            }
+        }
+    }
+}
+#bckg-img{
+    background-image: url('/img/bg-video-01.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+    height: 40em;
+    background-position: center -70.7604px;
+    .row{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        text-align: center;
+        width: 20%;
+        margin: auto;
+        h2{
+            font-size: 3em;
+            color: #fff;
+        }
+        a{
+            color: #fff;
+        }
+        .modal-dialog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35em;
+            .modal-content{
+                width: 50em;
+                background-color: #222;
+            }
+        }
+    }
+}
+.blog{
+    padding: 1em;
+    .blog-card{
+        margin-top: 3em;
+        .cards{
+            .card-wrt{
+                margin-top: 1em;
+                .author{
+                    height: 40px;
+                }
+                h5{
+                    font-family: Montserrat-Medium;
+                    color: #333;
+                }
+                p{
+                    font-family: Montserrat-Regular;
+                    color: #888;
+                }
+            }
+            .img-p{
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    &:hover{
+                        transition-duration: 1s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.comment{
+    padding: 0;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    .flex-img{
+        display: flex;
+        margin-top: 2em;
+        .flex-card{
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #333;
+                width: 100%;
+                .textlay {
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+                    font-size: 1em;
+                    position: absolute;
+                    text-align: center;
+                    padding: 2em;
+                    i{
+                        position: absolute;
+                        left:10%;
+                        top: 10%;
+                        cursor: pointer;
+                    }
+                    div{
+                        margin-top: 4em;
+                        p{
+                            margin-top: 1em !important;
+                            
+                        }
+                    }
+                  }
+              }
+              img{
+                width: 100%;
+              }
+        }
+      
+    }
+    .deliver{
+        margin-top: 5em;
+        display: flex;
+        justify-content: center;
+        div{
+            text-align: center;
+            h5{
+                font-family: Montserrat-Regular;
+                color: #555;
+            }
+            i{
+                a{
+                    font-family: Montserrat-Italic;
+                    color: #888;
+                }
+            }
+        }
+        .border-div{
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+    }
+}
+.ft-part{
+    padding: 2em;
+    background-color: #f2f2f2;
+    .ft-navs{
+        .info{
+            ul{
+                margin-top: 1em !important;
+                li{
+                    display: inline;
+                    padding-right: 1em;
+                    font-size: 1em;
+                        i{
+                            &:hover{
+                                transition-duration: .5s;
+                                color: #e65540;
+                            }
+                    }
+                    a{
+                        color: #888888;
+                    }
+                }
+            }
+            p{
+                margin-top: 2em !important;
+                color: #696869;
+            }
+        }
+        div{
+            ul{
+                li{
+                    padding-top: 1em;
+                    a{
+                        color: #888888;
+                        text-decoration: none;
+                        &:hover{
+                            transition-duration: .5s;
+                            color: #e65540;
+                        }
+                    }
+                }
+            }
+            h6{
+                font-family: Montserrat-Bold;
+                color: #222;
+                font-weight: bold;
+            }
+        }
+        .subs{
+            input{
+                margin-top: 2em;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid black;
+                outline: none;
+            }
+            button{
+                margin-top: 1em;
+                border-radius: 23px;
+                width: 50%;
+                height: 3em;
+                background-color: #111;
+                color: #f2f2f2;
+                outline: none;
+                border: none;
+                &:hover{
+                    transition-duration: .5s;
+                    background-color: #e65540;
+                }
+            }
+        }
+        .bank-card{
+            ul{
+                li{
+                    display: inline;
+                    img{
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
