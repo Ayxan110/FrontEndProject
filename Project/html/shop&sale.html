@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/shop&sale.css">
+</head>
+
+<body>
     <header>
         <div class="header-part container-fluid">
             <div class="hd-1 row">
@@ -72,49 +75,312 @@
             </div>
         </div>
     </header>
-</head>
-<section id="bcg">
-    <div id="bckg-img">
-        <h2>WOMEN</h2>
-        <h4>New Arrivals Women Collection 2018</h4>
-    </div>
-</section>
-<main>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div>
-                    <h3>Categories</h3>
-                    <div>
-                        <ul>
-                            <li>All</li>
-                            <li>Women</li>
-                            <li>Men</li>
-                            <li>Kids</li>
-                            <li>Accesories</li>
-                        </ul>
+    <section id="bcg">
+        <div id="bckg-img">
+            <h2>WOMEN</h2>
+            <h4>New Arrivals Women Collection 2018</h4>
+        </div>
+    </section>
+    <main>
+        <div class="container">
+            <div class="row">
+                <aside class="aside-part col-md-3">
+                    <div class="first-aside">
+                        <h5>Categories</h5>
+                        <div>
+                            <ul>
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Accesories</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h3>Filters</h3>
-                    <div>
-                        <p>
-                            <label for="amount">Price</label>
-                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-                        </p>
+                    <div class="second-aside">
+                        <h5>Filters</h5>
+                        <div id="line"></div>
+                        <div id="slider">
+                            <p>
+                                <label for="amount">Price</label>
+                                <input type="text" id="amount" readonly
+                                    style="border:0; color:#f6931f; font-weight:bold;">
+                            </p>
 
-                        <div id="slider-range"></div>
+                            <div id="slider-range"></div>
+                        </div>
+                        <div id="filtr">
+                            <button>FILTER</button>
+                            <p>Range: $50 - $200</p>
+                        </div>
+                    </div>
+                    <div class="third-aside">
+                        <h6>COLOR</h6>
+                        <div>
+                            <ul>
+                                <li style="background-color: #00bbec;"></li>
+                                <li style="background-color: #2c6ed5;"></li>
+                                <li style="background-color: #ffa037;"></li>
+                                <li style="background-color: #ff5337;"></li>
+                                <li style="background-color: #a88c77;"></li>
+                                <li style="background-color: #393939;"></li>
+                                <li style="background-color: #cccccc;"></li>
+                            </ul>
+                        </div>
+                        <div id="search">
+                            <input type="text" placeholder="Search Products..." class="form-group">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+
+                </aside>
+                <div class="clothes col-md-9">
+                    <div class="hd-main container-fluid">
+                        <div class="row">
+                            <div class="drop-pt col-md-5">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Default Sorting
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Default Sorting</a>
+                                        <a class="dropdown-item" href="#">Popularity</a>
+                                        <a class="dropdown-item" href="#">Price: low to high</a>
+                                        <a class="dropdown-item" href="#">Price: high to low</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Price
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Price</a>
+                                        <a class="dropdown-item" href="#">$0.00 - $50.00</a>
+                                        <a class="dropdown-item" href="#">$50.00 - $100.00</a>
+                                        <a class="dropdown-item" href="#">$100.00 - $150.00</a>
+                                        <a class="dropdown-item" href="#">$150.00 - $200.00</a>
+                                        <a class="dropdown-item" href="#">$200.00+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrt-hd-main col-md-7">
+                                <p>Showing 1–12 of 16 results</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-cont container-fluid">
+                        <div class="row">
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                            <div class="item-card col-md-4">
+                                <div>
+                                    <img src="/img/item-02.jpg" alt="photo">
+                                </div>
+                                <button>ADD TO CARD</button>
+                                <i class="far fa-heart"></i>
+                                <div>
+                                    <a href="#">Herschel supply co 25l</a>
+                                    <p>$75.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button>1</button>
+                            <button>2</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9"></div>
         </div>
-    </div>
-</main>
+    </main>
+    <footer>
+        <div class="ft-part container-fluid">
+            <div class="ft-navs row">
+                <div class="info col-md-3">
+                    <h6>GET IN TOUCH</h6>
+                    <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call
+                        us on
+                        (+1) 96 716 6879</p>
+                    <ul>
+                        <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+                        <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>CATEGORIES</h6>
+                    <ul>
+                        <li> <a href="#">Men</a></li>
+                        <li> <a href="#">Women</a></li>
+                        <li> <a href="#">Dresses</a></li>
+                        <li> <a href="#">Sunglasses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>LINKS</h6>
+                    <ul>
+                        <li> <a href="#">Search</a></li>
+                        <li> <a href="#">About Us</a></li>
+                        <li> <a href="#">Contact Us</a></li>
+                        <li> <a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>HELP</h6>
+                    <ul>
+                        <li> <a href="#">Track Order
+                            </a></li>
+                        <li> <a href="#">Returns</a></li>
+                        <li> <a href="#">Shipping</a></li>
+                        <li> <a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="subs col-md-3">
+                    <h6>NEWSLETTER</h6>
+                    <input type="text" name="email" placeholder="email@example.com" style="width: 80%;">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="bank-card">
+                <ul class="d-flex" style="justify-content: center; margin-top: 1em !important;">
+                    <li><img src="/img/paypal.png" alt="photo"></li>
+                    <li><img src="/img/visa.png" alt="photo"></li>
+                    <li><img src="/img/mastercard.png" alt="photo"></li>
+                    <li><img src="/img/express.png" alt="photo"></li>
+                    <li><img src="/img/discover.png" alt="photo"></li>
+                </ul>
+                <div class="d-flex" style="justify-content: center; margin-top: 1em">
+                    <p>Copyright © 2017 Colorlib. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<body>
-    <script>
-    </script>
 
 
 
@@ -139,8 +405,23 @@
             });
             $("#amount").val("$" + $("#slider-range").slider("values", 0) +
                 " - $" + $("#slider-range").slider("values", 1));
+            })
+            $('.item-card').hover(function () {
+                $(this).children('img').toggleClass("img-opacity");
+                $(this).children('i').toggleClass("i-opacity");
+                $(this).children('button').toggleClass("animated fadeInUp");
         });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
