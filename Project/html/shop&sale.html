@@ -11,8 +11,6 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/css/shop&sale.css">
 </head>
 
@@ -307,7 +305,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="buttons row">
                             <button>1</button>
                             <button>2</button>
                         </div>
@@ -393,6 +391,11 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+        $('.item-card').hover(function () {
+            $(this).children('img').toggleClass("img-opacity");
+            $(this).children('i').toggleClass("i-opacity");
+            $(this).children('button').toggleClass("animated fadeInUp");
+        });
         $(function () {
             $("#slider-range").slider({
                 range: true,
@@ -405,12 +408,7 @@
             });
             $("#amount").val("$" + $("#slider-range").slider("values", 0) +
                 " - $" + $("#slider-range").slider("values", 1));
-            })
-            $('.item-card').hover(function () {
-                $(this).children('img').toggleClass("img-opacity");
-                $(this).children('i').toggleClass("i-opacity");
-                $(this).children('button').toggleClass("animated fadeInUp");
-        });
+        })
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
