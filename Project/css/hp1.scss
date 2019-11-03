@@ -233,14 +233,18 @@ p{
             button{
                 transition: .5s ease;
                 position: absolute;
-                top: 85%;
-                left: 30%;
+                top: 70%;
+                left: 27%;
                 transform: translate(-50%, -50%);
                 text-align: center;
                 opacity: 0;
                 background-color: #111;
                 color: #fff;
                 border-radius: 12px;
+                &:hover{
+                    transition-duration: .5s;
+                    background-color: #e65540;
+                }
             }
             i{
                 transition: .5s ease;
@@ -251,6 +255,21 @@ p{
                 text-align: center;
                 opacity: 0;
                 color: #222;
+            }
+            div{
+                a{
+                    text-decoration: none;
+                    color: #919192;
+                    font-weight: 300;
+                    &:hover{
+                        transition-duration: .5s;
+                        color: #e65540;
+                    }
+                }
+                p{
+                    font-weight: 300;
+                    color: #767776;
+                }
             }
         }
     }

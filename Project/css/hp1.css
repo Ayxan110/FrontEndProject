@@ -329,8 +329,8 @@ p {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   position: absolute;
-  top: 85%;
-  left: 30%;
+  top: 70%;
+  left: 27%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
@@ -338,6 +338,12 @@ p {
   background-color: #111;
   color: #fff;
   border-radius: 12px;
+}
+
+.featured .owl-carousel .item button:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  background-color: #e65540;
 }
 
 .featured .owl-carousel .item i {
@@ -351,6 +357,23 @@ p {
   text-align: center;
   opacity: 0;
   color: #222;
+}
+
+.featured .owl-carousel .item div a {
+  text-decoration: none;
+  color: #919192;
+  font-weight: 300;
+}
+
+.featured .owl-carousel .item div a:hover {
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  color: #e65540;
+}
+
+.featured .owl-carousel .item div p {
+  font-weight: 300;
+  color: #767776;
 }
 
 .salepart {

@@ -70,8 +70,8 @@
                 </div>
                 <div class="account col-md-4">
                     <div class="d container">
-                            <div><img src="/img/icon-header-01.png" alt="logo"></div>
-                            <div><img src="/img/icon-header-02.png" alt="logo"></div>
+                        <div><img src="/img/icon-header-01.png" alt="logo"></div>
+                        <div><img src="/img/icon-header-02.png" alt="logo"></div>
                     </div>
                 </div>
             </div>
@@ -164,23 +164,39 @@
                 <div class="owl-carousel owl-theme">
                     <div class="item item-card">
                         <img src="/img/item-02.jpg" alt="photo">
-                        <button class="btn">ADD TO CARD</button>
+                        <button class="btn addto">ADD TO CARD</button>
                         <i class="far fa-heart"></i>
+                        <div>
+                            <a href="#">Herschel supply co 25l</a>
+                            <p>$75.00</p>
+                        </div>
                     </div>
                     <div class="item item-card">
                         <img src="/img/item-03.jpg" alt="photo">
-                        <button class="btn">ADD TO CARD</button>
+                        <button class="btn addto">ADD TO CARD</button>
                         <i class="far fa-heart"></i>
+                        <div>
+                            <a href="#">Herschel supply co 25l</a>
+                            <p>$75.00</p>
+                        </div>
                     </div>
                     <div class="item item-card">
                         <img src="/img/item-05.jpg" alt="photo">
-                        <button class="btn">ADD TO CARD</button>
+                        <button class="btn addto">ADD TO CARD</button>
                         <i class="far fa-heart"></i>
+                        <div>
+                            <a href="#">Herschel supply co 25l</a>
+                            <p>$75.00</p>
+                        </div>
                     </div>
                     <div class="item item-card">
                         <img src="/img/item-07.jpg" alt="photo">
-                        <button class="btn">ADD TO CARD</button>
+                        <button class="btn addto">ADD TO CARD</button>
                         <i class="far fa-heart"></i>
+                        <div>
+                            <a href="#">Herschel supply co 25l</a>
+                            <p>$75.00</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -437,7 +453,7 @@
         </div>
     </footer>
 
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -481,9 +497,17 @@
                     $('.hd-1').fadeIn();
                 }
             })
+            $('.addto').click(function () {
+                swal({
+                    icon: "success",
+                    title: $(this).siblings('div').children('a').text(),
+                    text: "is added to card",
+
+                   
+                });
+            })
         })
     </script>
-
 
 
 
