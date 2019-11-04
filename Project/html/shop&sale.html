@@ -391,11 +391,6 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-        $('.item-card').hover(function () {
-            $(this).children('img').toggleClass("img-opacity");
-            $(this).children('i').toggleClass("i-opacity");
-            $(this).children('button').toggleClass("animated fadeInUp");
-        });
         $(function () {
             $("#slider-range").slider({
                 range: true,
@@ -409,6 +404,11 @@
             $("#amount").val("$" + $("#slider-range").slider("values", 0) +
                 " - $" + $("#slider-range").slider("values", 1));
         })
+        $('.item-card').hover(function () {
+            $(this).children('img').toggleClass("img-opacity");
+            $(this).children('i').toggleClass("i-opacity");
+            $(this).children('button').toggleClass("animated fadeInUp");
+        });
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
