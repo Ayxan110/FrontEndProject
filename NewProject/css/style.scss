@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.hd-part{
+    background-color: gray;
+    .row{
+        height: 3em;
+        display: flex;
+        align-items: center;
+        .nav-part{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    a{
+                        font-family: "Poppins", sans-serif;
+                        font-size: 0.75em;
+                        color: #f5fafe;
+                        font-weight: 500;
+                    }
+                }
+                #down{
+                    display: flex;
+                    align-items: center;
+                    i{
+                        font-size: 0.7em;
+                    }
+                    div{
+                        
+                    }
+                }
+            }
+        }
+    }
+}
