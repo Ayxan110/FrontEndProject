@@ -6,7 +6,11 @@ header {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+i {
   cursor: pointer;
 }
 
@@ -37,204 +41,83 @@ img {
 }
 
 ul {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
-.header-part {
+.hd-part .hd-1 {
+  height: 3em;
   background-color: #f5f5f5;
 }
 
-.header-part .hd-1 {
-  height: 3em;
+.hd-part .hd-1 .ico-part ul {
+  width: 40%;
 }
 
-.header-part .hd-1 .hd-1-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.hd-part .hd-1 .ico-part ul i {
+  color: #888;
 }
 
-.header-part .hd-1 .hd-1-icons ul li {
-  display: inline;
-  padding-right: 3em;
-  font-size: 1.2em;
-}
-
-.header-part .hd-1 .hd-1-icons ul li a {
-  color: #888888;
-}
-
-.header-part .hd-1 .hd-1-icons ul li a i:hover {
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
+.hd-part .hd-1 .ico-part ul i:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   color: #e65540;
 }
 
-.header-part .hd-1 .hd-1-advert {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header-part .hd-1 .hd-1-advert p {
+.hd-part .hd-1 .shipping {
   text-align: center;
-  color: #a6a6a6;
-  display: inline-block;
 }
 
-.header-part .hd-1 .hd-1-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.hd-part .hd-1 .shipping p {
+  color: #888;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
-.header-part .hd-1 .hd-1-email div {
-  display: inline-block;
+.hd-part .hd-1 .email div {
+  width: 50%;
 }
 
-.header-part .hd-1 .hd-1-email div span {
-  margin-right: 1.1em;
-  color: #a6a6a6;
+.hd-part .hd-1 .email div span {
+  color: #888;
+  font-size: 0.9em;
 }
 
-.header-part .hd-1 .hd-1-email div select {
-  background-color: transparent;
+.hd-part .hd-1 .email div #slct {
+  color: #888;
+  font-size: 0.9em;
   border: none;
-  color: #888888;
+  background-color: transparent;
   outline: none;
 }
 
-.header-part .hd-2 {
-  background-color: #ffffff;
+.hd-part .hd-2 {
   height: 5em;
+  width: 95%;
+  margin: auto;
 }
 
-.header-part .hd-2 .logo-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+.hd-part .hd-2 .logo-part img {
+  width: 25%;
 }
 
-.header-part .hd-2 .nav-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-part .hd-2 .nav-part .navv {
-  width: 100%;
-}
-
-.header-part .hd-2 .nav-part .navv .navvv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.header-part .hd-2 .nav-part .navv .navvv li a {
+.hd-part .hd-2 .nav-part li a {
   color: #333;
 }
 
-.header-part .hd-2 .nav-part .navv .navvv li a:hover {
-  border-bottom: 1px solid black;
-}
-
-.header-part .hd-2 .nav-part .navv .menu ul {
-  position: absolute;
-  z-index: 1;
-  background-color: #222;
-  width: 10em;
-  height: 7em;
-  padding: 1em !important;
-  display: none;
-}
-
-.header-part .hd-2 .nav-part .navv .menu ul li {
-  padding: .15em !important;
-}
-
-.header-part .hd-2 .nav-part .navv .menu ul li a {
-  color: #fff;
-}
-
-.header-part .hd-2 .nav-part .navv .menu ul li a:hover {
-  -webkit-transition-duration: .4s;
-          transition-duration: .4s;
+.hd-part .hd-2 .nav-part li a:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   color: #e65540;
-  text-decoration: none;
 }
 
-.header-part .hd-2 .nav-part .navv:hover {
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
-}
-
-.header-part .hd-2 .nav-part .navv:hover .menu ul {
+.hd-part .hd-2 .nav-part #menu:hover #menu ~ #hover-menu {
   display: block;
-}
-
-.header-part .hd-2 .account {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-part .hd-2 .account .d {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 80%;
-}
-
-.header-part .hd-2 .account .d div {
-  padding-right: 2em;
 }
 
 .content {
@@ -265,8 +148,8 @@ p {
 }
 
 .content .categories div .elements button:hover {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   background-color: #e65540;
 }
 
@@ -298,8 +181,8 @@ p {
 }
 
 .content .categories div .sign button:hover {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   background-color: #e65540;
 }
 
@@ -319,18 +202,18 @@ p {
   display: block;
   width: 100%;
   height: auto;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
 
 .featured .owl-carousel .item button {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   position: absolute;
-  top: 70%;
-  left: 27%;
+  top: 85%;
+  left: 30%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
@@ -340,15 +223,9 @@ p {
   border-radius: 12px;
 }
 
-.featured .owl-carousel .item button:hover {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  background-color: #e65540;
-}
-
 .featured .owl-carousel .item i {
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   position: absolute;
   top: 7%;
   right: 3%;
@@ -357,23 +234,6 @@ p {
   text-align: center;
   opacity: 0;
   color: #222;
-}
-
-.featured .owl-carousel .item div a {
-  text-decoration: none;
-  color: #919192;
-  font-weight: 300;
-}
-
-.featured .owl-carousel .item div a:hover {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
-  color: #e65540;
-}
-
-.featured .owl-carousel .item div p {
-  font-weight: 300;
-  color: #767776;
 }
 
 .salepart {
@@ -389,7 +249,8 @@ p {
   overflow: hidden;
 }
 
-.salepart .lookbook .lookbook-wrt h2, .salepart .lookbook .lookbook-wrt a {
+.salepart .lookbook .lookbook-wrt h2,
+.salepart .lookbook .lookbook-wrt a {
   color: #ffffff;
   position: absolute;
 }
@@ -421,7 +282,8 @@ p {
   overflow: hidden;
 }
 
-.salepart .glasses .gls-wrt a, .salepart .glasses .gls-wrt div {
+.salepart .glasses .gls-wrt a,
+.salepart .glasses .gls-wrt div {
   position: absolute;
 }
 
@@ -526,8 +388,8 @@ p {
   height: 100%;
   width: 100%;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   background-color: #333;
   width: 100%;
 }
@@ -647,7 +509,13 @@ p {
   display: inline;
 }
 
-.carousel h1, .carousel h2, .carousel button {
+.carousel {
+  position: relative;
+}
+
+.carousel h1,
+.carousel h2,
+.carousel button {
   position: absolute;
 }
 
@@ -687,13 +555,13 @@ p {
   left: 18.4em;
   color: #f2f2f2;
   font-weight: 100;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
 .ft-part .ft-navs .info li i:hover {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   color: #e65540;
 }
 
@@ -702,24 +570,18 @@ p {
 }
 
 .ft-part .ft-navs div ul li a:hover {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   color: #e65540;
 }
 
 .ft-part .ft-navs .subs button:hover {
-  -webkit-transition-duration: .5s;
-          transition-duration: .5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   background-color: #e65540;
 }
 
 .ft-part .bank-card img {
   cursor: pointer;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
 }
 /*# sourceMappingURL=hp1.css.map */

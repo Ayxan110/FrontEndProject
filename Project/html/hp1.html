@@ -19,60 +19,54 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-part container-fluid">
-            <div class="hd-1 row">
-                <div class="hd-1-icons col-12 col-sm-4 col-md-4 col-lg-4">
-                    <ul>
-                        <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                        <li> <a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-                        <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-                <div class="hd-1-advert col-12 col-sm-4 col-md-4 col-lg-4">
-                    <p>Free shipping for standard order over $100</p>
-                </div>
-                <div class="hd-1-email col-12 col-sm-4 col-md-4 col-lg-4">
-                    <div>
-                        <span>fashe@example.com</span>
-                        <select name="select" id="slct">
-                            <option value="USD">USD</option>
-                            <option value="EUR">EUR</option>
-                        </select>
-                    </div>
+    <header class="hd-part container-fluid">
+        <div class="hd-1 row d-flex align-items-center">
+            <div class="ico-part col-12 col-sm-12 col-md-4">
+                <ul class="d-flex justify-content-around">
+                    <li><i class="fab fa-facebook-f" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-pinterest-p" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></li>
+                    <li><i class="fab fa-youtube" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            <div class="shipping col-12 col-sm-12 col-md-4">
+                <p>Free shipping for standard order over $100 </p>
+            </div>
+            <div class="email col-12 col-sm-12 col-md-4 d-flex justify-content-end">
+                <div class="d-flex justify-content-around">
+                    <span>fashe@example.com</span>
+                    <select id="slct">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                    </select>
                 </div>
             </div>
-            <div class="hd-2 row">
-                <div class="logo-part col-12 col-md-4">
-                    <div><img src="/img/logo.png" alt="logo"></div>
-                </div>
-                <div class="nav-part col-md-4">
-                    <nav class="navv">
-                        <ul class="navvv">
-                            <li class="nav-item menu">
-                                <a class="nav-link" href="#">Home</a>
-                                <ul>
-                                    <li><a href="hp1.html">Homepage V1</a></li>
-                                    <li><a href="hp2.html">Homepage V2</a></li>
-                                    <li><a href="hp3.html">Homepage V3</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="shop&sale.html">Shop</a></li>
-                            <li class="nav-item"><a class="nav-link" href="shop&sale.html">Sale</a></li>
-                            <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-                            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </div>
+        <div class="hd-2 row d-flex align-items-center">
+            <div class="logo-part col-md-4"><img src="/img/logo.png" alt="logo"></div>
+            <nav class="nav-part col-md-4">
+                <ul class="d-flex justify-content-between">
+                    <li>
+                        <a href="hp1.html" id="menu">Home</a>
+                        <ul id="hover-menu" style="display: none; position: absolute;">
+                            <li><a href="hp1.html">Homepage V1</a></li>
+                            <li><a href="hp2.html">Homepage V2</a></li>
+                            <li><a href="hp3.html">Homepage V3</a></li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="account col-md-4">
-                    <div class="d container">
-                        <div><img src="/img/icon-header-01.png" alt="logo"></div>
-                        <div><img src="/img/icon-header-02.png" alt="logo"></div>
-                    </div>
+                    </li>
+                    <li><a href="shop&amp;sale.html">Shop</a></li>
+                    <li><a href="shop&amp;sale.html">Sale</a></li>
+                    <li><a href="features.html">Feautures</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-around">
+                    <img src="/img/icon-header-01.png" alt="icon" style="width: 7%;">
+                    <img src="/img/icon-header-02.png" alt="icon" style="width: 5%;">
                 </div>
             </div>
         </div>

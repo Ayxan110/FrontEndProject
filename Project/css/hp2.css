@@ -24,6 +24,10 @@ a {
   opacity: 1 !important;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header-part .hd-1 {
   position: relative;
   background-color: #e65540;
